@@ -58,6 +58,88 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- modile menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button type="button" class="menu-close-btn" data-menu-close>
+            <svg class="modal-icon-close" width="8" height="8">
+              <use
+                class="modal-icon-close"
+                href="./images/icons.svg#icon-close"
+              ></use>
+            </svg>
+          </button>
+          <nav class="menu-nav">
+            <ul class="menu-nav-list">
+              <li class="menu-nav-list-item">
+                <a
+                  href="./index.html"
+                  class="menu-nav-list-item-link current-menu"
+                  >Studio</a
+                >
+              </li>
+              <li class="menu-nav-list-item">
+                <a href="" class="menu-nav-list-item-link">Portfolio</a>
+              </li>
+              <li class="menu-nav-list-item">
+                <a href="" class="menu-nav-list-item-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="menu-contact">
+            <ul class="menu-contact-list">
+              <li class="menu-contact-list-item">
+                <a href="tel:+110001111111" class="menu-contact-list-item-link">
+                  +11 (000) 111-11-11
+                </a>
+              </li>
+              <li class="menu-contact-list-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="menu-contact-list-item-link"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="icon-social-links">
+            <li class="icon-social-item">
+              <a href="" target="_blank" class="team-icon-link">
+                <svg class="footer-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-social-item">
+              <a href="" target="_blank" class="team-icon-link">
+                <svg class="footer-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-social-item">
+              <a href="" target="_blank" class="team-icon-link">
+                <svg class="footer-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-social-item">
+              <a href="" target="_blank" class="team-icon-link footer-icon">
+                <svg class="footer-list-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -67,7 +149,9 @@
           <h1 class="hero-baner-title">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="hero-baner-btn">Order Service</button>
+          <button type="button" class="hero-baner-btn" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Our Advantages -->
@@ -134,6 +218,7 @@
             <li class="team-list-item">
               <img
                 width="264"
+                srcset="./images/mark.jpg 1x, ./images/mark-x2.jpg 2x"
                 src="./images/mark.jpg"
                 class="team-list-item-img"
                 alt="Mark Guerrero"
@@ -176,6 +261,7 @@
             <li class="team-list-item">
               <img
                 width="264"
+                srcset="./images/tom.jpg 1x, ./images/tom-x2.jpg 2x"
                 src="./images/tom.jpg"
                 class="team-list-item-img"
                 alt="Tom Ford"
@@ -218,6 +304,7 @@
             <li class="team-list-item">
               <img
                 width="264"
+                srcset="./images/camila.jpg 1x, ./images/camila-x2.jpg 2x"
                 src="./images/camila.jpg"
                 class="team-list-item-img"
                 alt="Camila Garcia"
@@ -260,6 +347,7 @@
             <li class="team-list-item">
               <img
                 width="264"
+                srcset="./images/daniel.jpg 1x, ./images/daniel-x2.jpg 2x"
                 src="./images/daniel.jpg"
                 class="team-list-item-img"
                 alt="Daniel Wilson"
@@ -310,11 +398,13 @@
             <li class="portfolio-title-list-item">
               <div class="container-list">
                 <img
+                  srcset="
+                    ./images/banking-app.jpg    1x,
+                    ./images/banking-app-x2.jpg 2x
+                  "
                   src="./images/banking-app.jpg"
                   class="portfolio-title-list-item-img"
                   alt="Banking App"
-                  width="360"
-                  height="300"
                 />
                 <p class="container-list-second-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -330,11 +420,13 @@
             <li class="portfolio-title-list-item">
               <div class="container-list">
                 <img
+                  srcset="
+                    ./images/cashless-payment.jpg    1x,
+                    ./images/cashless-payment-x2.jpg 2x
+                  "
                   src="./images/cashless-payment.jpg"
                   class="portfolio-title-list-item-img"
                   alt="Cashless Payment"
-                  width="360"
-                  height="300"
                 />
                 <p class="container-list-second-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -352,11 +444,13 @@
             <li class="portfolio-title-list-item">
               <div class="container-list">
                 <img
+                  srcset="
+                    ./images/meditation-app.jpg    1x,
+                    ./images/meditation-app-x2.jpg 2x
+                  "
                   src="./images/meditation-app.jpg"
                   class="portfolio-title-list-item-img"
                   alt="Meditation App"
-                  width="360"
-                  height="300"
                 />
                 <p class="container-list-second-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -374,11 +468,13 @@
             <li class="portfolio-title-list-item">
               <div class="container-list">
                 <img
+                  srcset="
+                    ./images/taxi-service.jpg    1x,
+                    ./images/taxi-service-x2.jpg 2x
+                  "
                   src="./images/taxi-service.jpg"
                   class="portfolio-title-list-item-img"
                   alt="Taxi Service"
-                  width="360"
-                  height="300"
                 />
                 <p class="container-list-second-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -394,11 +490,13 @@
             <li class="portfolio-title-list-item">
               <div class="container-list">
                 <img
+                  srcset="
+                    ./images/screen-illustrations.jpg    1x,
+                    ./images/screen-illustrations-x2.jpg 2x
+                  "
                   src="./images/screen-illustrations.jpg"
                   class="portfolio-title-list-item-img"
                   alt="Screen Illustrations"
-                  width="360"
-                  height="300"
                 />
                 <p class="container-list-second-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -416,11 +514,13 @@
             <li class="portfolio-title-list-item">
               <div class="container-list">
                 <img
+                  srcset="
+                    ./images/online-courses.jpg    1x,
+                    ./images/online-courses-x2.jpg 2x
+                  "
                   src="./images/online-courses.jpg"
                   class="portfolio-title-list-item-img"
                   alt="Online Courses"
-                  width="360"
-                  height="300"
                 />
                 <p class="container-list-second-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -505,9 +605,9 @@
       </div>
     </footer>
     <!-- modal -->
-    <div class="backdrop is-ope">
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn">
+        <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-icon-close" width="8" height="8">
             <use
               class="modal-icon-close"
@@ -570,9 +670,8 @@
               <span class="checkbox-icon">
                 <svg class="checkbox-svg" width="10" height="8">
                   <use href="./images/icons.svg#icon-accept"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
+                </svg> </span
+              >I accept the terms and conditions of the
               <a class="user-privacy-link" href="">Privacy Policy</a></label
             >
           </div>
@@ -580,5 +679,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
